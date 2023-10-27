@@ -26,7 +26,8 @@ doit proc
 again:
 	mul ebx, eax		
 	add ecx, eax
-	cmp eax, 243	
+	cmp eax, 243
+	jl again
 
 	ret
 
