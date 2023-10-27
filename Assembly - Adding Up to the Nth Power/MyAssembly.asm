@@ -27,8 +27,9 @@ doit proc
 again:
 	mul ebx,		
 	add ecx, eax
-	inc edx
-	cmp eax, 243
+	inc edx			; error loop 
+	;cmp eax, 243
+	cmp edx, 5
 	jl again
 
 	ret
@@ -47,17 +48,17 @@ again:
 	; program challenge: 3^1 + 3^2 + 3^3 + 3^4 + ..... + 3^100
 	
 	; ----- initialization -----
-	mov eax, 1
-	mov	ebx, 3
-	xor ecx, ecx
-
-again:
-	mul ebx, eax		
-	add ecx, eax
-	cmp eax, 243
-	jl again
-
-	ret
+;	mov eax, 1
+;	mov	ebx, 3
+;	xor ecx, ecx
+;
+;again:
+;	mul ebx, eax		
+;	add ecx, eax
+;	cmp eax, 243
+;	jl again
+;
+;	ret
 
 	; --------------- Assembly Adding Powers ------------------------
 
