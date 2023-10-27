@@ -25,8 +25,9 @@ doit proc
 	xor edx, edx
 
 again:
-	mul ebx, eax		
+	mul ebx,		
 	add ecx, eax
+	inc edx
 	cmp eax, 243
 	jl again
 
