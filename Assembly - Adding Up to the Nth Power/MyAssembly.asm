@@ -22,6 +22,7 @@ doit proc
 	mov eax, 1
 	mov	ebx, 3
 	xor ecx, ecx
+	xor edx, edx
 
 again:
 	mul ebx, eax		
